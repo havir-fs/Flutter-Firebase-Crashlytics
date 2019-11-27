@@ -19,13 +19,13 @@ In order to setup the firebase for flutter app in Android and IOS platforms, the
 
 **Firebase account**
 
-In order to start the project  surf to this address: [Firebase](https://firebase.google.com). Then if you have signed with your gmail address by clicking on “Go to console” button on the top right hand side of the page you will be redirected to the web page in which you can add any project.
+In order to start the project  surf to the [Firebase website](https://firebase.google.com). Then if you have signed with your gmail address by clicking on “Go to console” button on the top right hand side of the page you will be redirected to the web page in which you can add any project.
 
 
 
 **Firebase project**
 
-The webpage [Firebase console](https://console.firebase.google.com/) contains all of the defined projects under your account. In order to define a project, it is enough to click on “add project” button. In this step the project name is defined. User can define whatever name that he wants, but  It should be noted that if in the name “_” is being used, it can not be installed on IOS. At the end of this step, a project is defined which can include some applications.
+The [Firebase console](https://console.firebase.google.com/) contains all of the defined projects under your account. In order to define a project, it is enough to click on “add project” button. In this step the project name is defined. User can define whatever name that he wants, but  It should be noted that if in the name “_” is being used, it can not be installed on IOS. At the end of this step, a project is defined which can include some applications.
 
 
 
@@ -138,7 +138,7 @@ Then a new window is opened inside the xcode, just click the “finish” button
 **General notes**
 
  - If you open crashlytics console for your application, automatically a filter is defined(Event type = “Crashes”).In the flutter plugin all caught errors are defined as Non-fatal, so in the Firebase console (Crashlytics section), if you want to see the errors you must remove the default filter. 
-There is an issue regarding using firebase_crashlytics [issue1149](https://github.com/FirebaseExtended/flutterfire/issues/1149#issuecomment-550029085).That means if you want to see all of the logs in the firebase console you have to run the project in terminal:
+There is an issue regarding using firebase_crashlytics [issue1149](https://github.com/FirebaseExtended/flutterfire/issues/1149#issuecomment-550029085). That means if you want to see all of the logs in the firebase console you have to run the project in terminal:
 
 ```cmd
 cd -root-of-project-
