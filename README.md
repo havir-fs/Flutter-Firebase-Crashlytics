@@ -1,6 +1,4 @@
-## Sample application that shows setup the Firebase Crashlytics in the Flutter (IOS and Android)
-
-## Introduction
+## Sample Firebase Crashlytics implementation for Flutter (IOS and Android)
 
 Following notes describes the way that firebase official plugin can be added to flutter in the way that it can send all of the reports in android and IOS platform to the console.
 
