@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "210235768225",
+    "firebase_url": "https://flutter-firebase-crashlytics.firebaseio.com",
+    "project_id": "flutter-firebase-crashlytics",
+    "storage_bucket": "flutter-firebase-crashlytics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210235768225:android:9ee3e1ad948ce9ee76dfe0",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firebase_crashlytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210235768225-ksmlbiqqke06pel9fumh5pcm7sp8r8e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUx3amRT5qGp2wjYeC6R8nmxQpuZDKmK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210235768225-ksmlbiqqke06pel9fumh5pcm7sp8r8e7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
