@@ -19,13 +19,13 @@ In order to setup the firebase for flutter app in Android and IOS platforms, the
 
 **Firebase account**
 
-In order to start the project  surf to this address: https://firebase.google.com. Then if you have signed with your gmail address by clicking on “Go to console” button on the top right hand side of the page you will be redirected to the web page in which you can add any project.
+In order to start the project  surf to this address: [Firebase](https://firebase.google.com). Then if you have signed with your gmail address by clicking on “Go to console” button on the top right hand side of the page you will be redirected to the web page in which you can add any project.
 
 
 
 **Firebase project**
 
-The webpage (address: https://console.firebase.google.com/) contains all of the defined projects under your account. In order to define a project, it is enough to click on “add project” button. In this step the project name is defined. User can define whatever name that he wants, but  It should be noted that if in the name “_” is being used, it can not be installed on IOS. At the end of this step, a project is defined which can include some applications.
+The webpage [Firebase console](https://console.firebase.google.com/) contains all of the defined projects under your account. In order to define a project, it is enough to click on “add project” button. In this step the project name is defined. User can define whatever name that he wants, but  It should be noted that if in the name “_” is being used, it can not be installed on IOS. At the end of this step, a project is defined which can include some applications.
 
 
 
@@ -39,7 +39,7 @@ Then, register the app. In the Android package name field, you should write your
 >-root-of-project-/android/app/src/main/AndroidManifest.xml
 
 
-```
+```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
    package="your package name">
 ```
@@ -56,7 +56,7 @@ Then update this file:
 
 >-root-of-project-/android/build.gradle
 
-```
+```gradle
 buildscript {
   repositories {
     // Check that you have the following line (if not, add it):
@@ -68,7 +68,7 @@ buildscript {
 
   dependencies {
     ...
-    // Add this line
+    // Add these lines
     classpath 'com.google.gms:google-services:4.3.3'
     classpath 'io.fabric.tools:gradle:1.31.2' 
   }
@@ -89,7 +89,7 @@ Update this file:
 
 >-root-of-project-/android/app/build.gradle
 
-```
+```gradle
 apply plugin: 'com.android.application'
 
 dependencies {
@@ -118,7 +118,7 @@ Then register the app. In order to do so, you have to enter your project’s bun
 
 Then run this command to open xcode: 
 
-```
+```cmd
 open Runner.xcworkspace 
 ```
 
@@ -138,10 +138,10 @@ Then a new window is opened inside the xcode, just click the “finish” button
 **General notes**
 
  - If you open crashlytics console for your application, automatically a filter is defined(Event type = “Crashes”).In the flutter plugin all caught errors are defined as Non-fatal, so in the Firebase console (Crashlytics section), if you want to see the errors you must remove the default filter. 
-There is an issue regarding using firebase_crashlytics (issue1149).That means if you want to see all of the logs in the firebase console you have to run the project in terminal:
+There is an issue regarding using firebase_crashlytics [issue1149](https://github.com/FirebaseExtended/flutterfire/issues/1149#issuecomment-550029085).That means if you want to see all of the logs in the firebase console you have to run the project in terminal:
 
-```
-cd <root-of-project->
+```cmd
+cd -root-of-project-
 Flutter clean
 Flutter run
 ```
@@ -149,7 +149,7 @@ Flutter run
 
  - In case of running the project inside IDEs you will receive only the exceptions that are thrown asynchronously. One possible solution for this case is to throw all of them in this pattern (not advisable):
 
-```
+```dart
 Future<void>.delayed(const Duration(seconds: 0), () {
                      throw StateError(“......’’);
                      // or  Crashlytics.instance.crash(); 
